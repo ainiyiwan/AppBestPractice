@@ -1,0 +1,36 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        release {
+            keyAlias 'jiagu'
+            keyPassword '123456'
+            storeFile file('C:/Users/Administrator/Desktop/jiagu.jks')
+            storePassword '123456'
+        }
+    }
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "zy.com.jiagu"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 2
+        versionName "1.0.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+            zipAlignEnabled true
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.tencent.bugly:crashreport_upgrade:latest.release'//其中latest.release指代最新版本号，也可以指定明确的版本号，例如1.2.0
+}
