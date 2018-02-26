@@ -40,7 +40,7 @@
         return msg;
     }
 ```
-<img src="https://github.com/ainiyiwan/AppBestPractice/blob/master/png/default.png" width = "300"/><img src="https://github.com/ainiyiwan/AppBestPractice/blob/master/png/huawei.png" width = "300"/>
+<img src="https://github.com/ainiyiwan/AppBestPractice/blob/master/png/default.png" width = "300"/> <img src="https://github.com/ainiyiwan/AppBestPractice/blob/master/png/huawei.png" width = "300"/>
 
 ### 完结
 老规矩，如果你遇到任何问题，请给我提issue，你遇到的问题，我都遇到过。
